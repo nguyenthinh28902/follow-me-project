@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Clients/" />
+  <Folder Name="/Gateways/" />
+  <Folder Name="/Library/">
+    <Project Path="Library/FollowMeProject.Library.Core/FollowMeProject.Library.Core.csproj" Id="6b9fde15-c4ca-49fe-baf2-30f2017d9eae" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/UserApp/">
+    <Project Path="UserApp.Service/UserApp.Service.csproj" Id="2bd8cc1e-3ae5-4705-8bae-6beee4c88d1b" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+  </Folder>
+</Solution>

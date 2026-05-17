@@ -1,0 +1,46 @@
+## Target folders
+## Bỏ qua toàn bộ thư mục build và output của các dự án .NET
+**/bin/
+**/obj/
+
+## Rider and Visual Studio Code
+## Bỏ qua cấu hình cá nhân của các IDE khác nếu mày hoặc người khác có dùng
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio cache and settings
+## Bỏ qua các file cache, dữ liệu tạm và file ẩn của Visual Studio
+.vs/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## User-specific files
+## Không đẩy cấu hình cá nhân hoặc file dữ liệu local lên Git
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+## Node / Frontend (Nếu sau này tầng Client có dùng React/Next.js)
+## Bỏ qua các thư viện frontend tải về từ npm
+**/node_modules/
+**/npm-debug.log*
+
+## Operating System Files
+## Bỏ qua các file sinh ra bởi hệ điều hành (Windows/macOS)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## Environment secrets
+## Cực kỳ quan trọng: Tuyệt đối không đẩy file chứa mật khẩu, private key lên Git
+*.env
+*.env.development
+*.env.local
