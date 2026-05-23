@@ -1,12 +1,19 @@
 <Solution>
   <Folder Name="/Clients/" />
   <Folder Name="/Gateways/" />
+  <Folder Name="/Gateways/UserIdentityServer/" />
   <Folder Name="/Library/">
-    <Project Path="Library/FollowMeProject.Library.Core/FollowMeProject.Library.Core.csproj" Id="6b9fde15-c4ca-49fe-baf2-30f2017d9eae" />
+    <Project Path="Library/FollowMe.Library.Core/FollowMe.Library.Core.csproj" Id="a83bdd1f-17ae-48e3-aed8-bffc9917fe7c" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/CachePulseService/">
+    <Project Path="Services/CachePulseService/CachePulse.WorkerService/CachePulse.WorkerService.csproj" Id="0651e0d8-ad77-4f10-8331-a378145493ef" />
+  </Folder>
   <Folder Name="/Services/UserApp/">
-    <Project Path="UserApp.Service/UserApp.Service.csproj" Id="2bd8cc1e-3ae5-4705-8bae-6beee4c88d1b" />
+    <Project Path="Services/UserApp/UserApp.Application/UserApp.Application.csproj" Id="70a363b7-3ceb-4be6-97e6-f2d8a2a93ed5" />
+    <Project Path="Services/UserApp/UserApp.Core/UserApp.Core.csproj" Id="a963d565-86a1-4aeb-a4c0-cab551583bca" />
+    <Project Path="Services/UserApp/UserApp.Infrastructure/UserApp.Infrastructure.csproj" Id="5eb06f94-4291-4e6b-b51c-aa8c2bf40cb3" />
+    <Project Path="Services/UserApp/UserApp.Service/UserApp.Service.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path="Directory.Packages.props" />
