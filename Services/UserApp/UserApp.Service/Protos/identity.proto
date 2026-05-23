@@ -1,0 +1,52 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "UserApp.Service.Protos";
+
+package identity;
+
+// Dịch vụ gRPC trung tâm điều phối xác thực và đăng ký thành viên
+service IdentityGrpcService {
+  rpc CheckUser (CheckUserGrpcRequest) returns (CheckUserGrpcResponse);
+  rpc UserRegister (UserRegisterGrpcRequest) returns (UserRegisterGrpcResponse);
+}
+
+// Bộ cấu trúc NotiResponse ánh xạ đồng bộ theo mô hình dữ liệu Backend của hệ thống
+message GrpcNotiResponse {
+  string code = 1;
+  string message_key = 2;
+  repeated GrpcValidationDetail details = 3;
+}
+
+message GrpcValidationDetail {
+  string field = 1;
+  string code = 2;
+  string message_key = 3;
+}
+
+// Messages phục vụ cho luồng kiểm tra tài khoản mật khẩu
+message CheckUserGrpcRequest {
+  string UsernameOrEmail = 1;
+  string password = 2;
+}
+
+message CheckUserGrpcResponse {
+  bool is_valid = 1;
+  string user_id = 2;
+  GrpcNotiResponse noti = 3;
+}
+
+// Messages phục vụ cho luồng đăng ký tài khoản mới
+message UserRegisterGrpcRequest {
+  string username = 1;
+  string email = 2;
+  string password = 3;
+  string full_name = 4;
+  string phone_number = 5;
+  string region = 6;
+}
+
+message UserRegisterGrpcResponse {
+  bool is_success = 1;
+  string user_id = 2; // Trả thêm UserId về để các service sau có thể dùng tạo Profile luôn nếu cần
+  GrpcNotiResponse noti = 3;
+}

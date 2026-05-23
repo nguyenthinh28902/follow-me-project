@@ -1,0 +1,23 @@
+﻿// Vị trí: UserApp.Infrastructure/Protos/identity.proto
+syntax = "proto3";
+
+option csharp_namespace = "UserApp.Infrastructure.Protos";
+
+package identity;
+
+// Service định nghĩa các hàm mà IdentityServer cung cấp
+service IdentityGrpc {
+  rpc RegisterCoreUser (RegisterCoreRequest) returns (RegisterCoreResponse);
+}
+
+message RegisterCoreRequest {
+  string email = 1;
+  string password = 2;
+  string home_region_id = 3;
+}
+
+message RegisterCoreResponse {
+  bool is_success = 1;
+  string user_id = 2; // Trả về GUID của User vừa tạo bên Master DB
+  string error_message = 3;
+}
