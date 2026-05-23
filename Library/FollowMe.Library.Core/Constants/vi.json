@@ -1,0 +1,25 @@
+﻿{
+  "common": {
+    "error": {
+      "region_not_found": "Phân vùng mạng hoặc vùng dữ liệu máy chủ không tồn tại trên hệ thống."
+    },
+    "system": {
+      "internal_error": "Hệ thống gặp sự cố ngoài ý muốn. Vui lòng thử lại sau ít phút."
+    }
+  },
+  "auth": {
+    "success": {
+      "credentials_validated": "Thông tin tài khoản chính xác. Đang chuyển tiếp quy trình cấp mã cấu hình..."
+    },
+    "error": {
+      "name_invalid": "Tên người dùng không hợp lệ hoặc chứa ký tự không cho phép.",
+      "email_duplicated": "Địa chỉ email này đã được đăng ký bởi một tài khoản khác.",
+      "username_duplicated": "Tên tài khoản này đã tồn tại trong hệ thống.",
+      "register_failed": "Đăng ký tài khoản thất bại từ hệ thống quản lý danh tính Identity Store.",
+      "invalid_credentials": "Tên đăng nhập hoặc mật khẩu không chính xác.",
+      "account_locked": "Tài khoản của bạn đã bị khóa tạm thời do đăng nhập sai quá nhiều lần.",
+      "user_not_found": "Tài khoản người dùng không tồn tại trên hệ thống.",
+      "invalid_password": "Mật khẩu nhập vào không đúng định dạng bảo mật hoặc không chính xác."
+    }
+  }
+}

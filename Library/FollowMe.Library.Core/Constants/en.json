@@ -1,0 +1,25 @@
+﻿{
+  "common": {
+    "error": {
+      "region_not_found": "The network region or server partition does not exist in our system."
+    },
+    "system": {
+      "internal_error": "An unexpected system error occurred. Please try again later."
+    }
+  },
+  "auth": {
+    "success": {
+      "credentials_validated": "Account credentials validated successfully. Proceeding to token generation..."
+    },
+    "error": {
+      "name_invalid": "The provided full name is invalid or contains restricted characters.",
+      "email_duplicated": "This email address is already registered under another account.",
+      "username_duplicated": "This username is already taken.",
+      "register_failed": "Account registration failed at the core Identity Store level.",
+      "invalid_credentials": "The email or password you entered is incorrect.",
+      "account_locked": "Your account has been temporarily locked due to multiple failed login attempts.",
+      "user_not_found": "User account could not be found in the system.",
+      "invalid_password": "The password entered is incorrect or does not meet security requirements."
+    }
+  }
+}
